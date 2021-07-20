@@ -15,19 +15,23 @@
         .user-box-title{background-color: #aaa;border-radius: 100px 0px 0px 100px;box-shadow: 2px 2px 5px #666 inset;}
         .form-input,.password-input{border: none;border-radius: 100px;}
         .password-input{box-shadow: 2px 2px 5px #666 inset;}
-        .btn{max-width: 400px;}
+        .btn{max-width: 400px;-webkit-filter:drop-shadow(5px 5px 5px #000);}
         .game-box{background: linear-gradient(180deg,#5b1985 0%,#2b0924 100%);}
-        footer{background: linear-gradient(180deg,#ffff01 0%,#fbb726 100%);font-size: .7rem;}
+        .game-box>div{padding: 0 1%;}
+        .game-box>div>img{-webkit-filter:drop-shadow(0px 0px 3px #fff);}
+        footer{background: linear-gradient(180deg,#ffff01 0%,#fbb726 100%);font-size: .6rem;}
+        footer .w1{font-size: .9rem;}
         @media screen and (min-width:767px) {
             .logo{top: 10px;left: 10px;}
             footer{font-size: 1.25rem;}
+            footer .w1{font-size: 1.75rem;font-weight: bolder;}
         }
     </style>
 </head>
 <body>
     <div class="position-absolute logo"><img class="w-100" src="images/TT88-Logo-W600.png" alt=""></div>
     <div class="container-fluid p-0 bg">
-        <img class="w-100" src="images/TT88-LP-Banner-1200x450.jpg" alt="">
+        <img class="w-100" src="images/banner.jpg" alt="">
         <div class="row w-100 mx-auto flex-column align-items-center justify-content-center p-4">
             <div class="col-10 col-md-6 d-flex p-0 overflow-hidden user-box">
                 <span class="h-100 py-2 px-4 user-box-title">ยูสเซอร์</span>
@@ -40,11 +44,11 @@
                 <img class="w-100 btn" src="images/button.png" alt="">
             </a>
         </div>
-        <div class="row w-100 mx-auto align-items-center justify-content-center p-4 game-box">
-            <div class="col-6 col-md-3 py-2"><img class="w-100" src="images/slot-W500.png" alt=""></div>
-            <div class="col-6 col-md-3 py-2"><img class="w-100" src="images/fish-W500.png" alt=""></div>
-            <div class="col-6 col-md-3 py-2"><img class="w-100" src="images/live-W500.png" alt=""></div>
-            <div class="col-6 col-md-3 py-2"><img class="w-100" src="images/lotto-W500.png" alt=""></div>
+        <div class="row w-100 mx-auto align-items-center justify-content-center px-2 py-4 game-box">
+            <div class="col-3"><img class="w-100" src="images/slot-W500.png" alt=""></div>
+            <div class="col-3"><img class="w-100" src="images/fish-W500.png" alt=""></div>
+            <div class="col-3"><img class="w-100" src="images/live-W500.png" alt=""></div>
+            <div class="col-3"><img class="w-100" src="images/lotto-W500.png" alt=""></div>
         </div>
     </div>
     <footer class="container-fluid">
